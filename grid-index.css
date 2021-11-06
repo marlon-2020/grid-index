@@ -1,0 +1,199 @@
+/*GRID GERAL*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.all-container{
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.grid-app{
+    margin:auto;
+    max-width:1242px;
+    background-color:white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 70px 320px 320px 320px 120px;
+    grid-gap:10px;
+}
+
+/*NAVEGADOR*/
+.grid-nav{
+    background-color: white;
+    grid-column: 1/4;
+}
+.grid-nav-recursive{
+    display: none;
+}
+/*FIGURAS DOS ELEMENTOS DO GRID*/
+.grid-main-1{
+    background-image: url(/grid-index/images/NewWorld.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/3;
+    max-width: 924px;
+}
+.grid-main-2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap:10px;
+}
+.grid-main-3{
+    background-image: url(images/darkestdungeon2.jpg);
+    background-size:cover;    
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1/3;   
+}
+.grid-main-4{
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap:10px;
+}
+.grid-main-5{
+    background-image: url(images/diabloIV.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-main-6{
+    background-image: url(images/OctapathTraveler.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-main-7{
+    background-image: url(images/pathfinder.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-footer{
+    background-color: silver;
+    grid-column: 1/4;
+}
+
+/*FIGURAS DOS ELEMENTOS DOS SUBGRIDS*/
+.item-1{
+    background-image: url(images/discord.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-2{
+    background-image: url(images/twitch.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-3{
+    background-image: url(images/whatsapp.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-4{
+    background-image: url(images/youtube.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*MENU-TOP-FLEX*/
+.menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:5px;
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+    height:100%;
+}
+.menu-option{
+    margin:5px;
+    padding:5px;
+}
+.menu-option>a{
+    text-decoration: none;
+    color:black;
+}
+/*MOUSE NO MENU*/
+.menu-list:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu-option:hover{
+    background-color:lightgrey;
+    transform: scale(1.2);
+}
+.menu-logo{
+    width: 80px;
+    height:100%;
+}
+.menu-search{
+    display:flex;
+    align-items: center;
+}
+.search-input{
+    height: 25px;
+}
+
+/*TEXTO DOS CONTAINERS*/
+.text-principal, .text-secondary, .text-others-1, .text-others-2, .text-others-3{
+    margin:280px 0px 0px 5px;
+    color: white;
+}
+
+.text-lateral-up-1,.text-lateral-up-2,.text-lateral-up-3,.text-lateral-up-4{
+    margin:120px 0px 0px 5px;
+    color: white;
+}
+
+/*EXPANDIR PELO PASSAR DO MOUSE*/
+.principal-up:hover, .item-1:hover, .item-2:hover, .principal-down:hover,
+.item-3:hover,.item-4:hover, .other-1:hover,.other-2:hover,.other-3:hover{
+    transform: scale(1.005);
+}
+
+/*FOOTER*/
+.footer-apearance{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.logo-icons{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.icon-contact>a>img{
+    width: 25px;
+    height: 25px;
+}
+.menu-footer>a{
+    background-color: black;
+    margin:5px;
+    padding:5px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px silver;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.ajude:hover,.vote:hover,.parceiro:hover,.inscreva:hover{
+    background-color: white;
+    text-shadow: 1px 1px 1px silver;
+    color:black;
+}
+.logo-footer{
+    width: 74px;
+    height: 50px;
+}

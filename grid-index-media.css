@@ -1,0 +1,139 @@
+@media only screen and (max-width: 916px) {
+    .grid-app{
+        margin:auto;
+        background-color:white;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 420px 420px 840px 840px 210px 210px 210px 70px;
+        grid-gap:10px;
+        border:none;
+    }
+    .grid-nav{
+        display:none;
+    }
+    .grid-nav-recursive{
+        grid-column: 1/1;
+        display: grid;
+    }
+    
+    /*FIGURAS DOS ELEMENTOS DO GRID*/
+    .grid-main-1{
+        background-image: url(/grid-index/images/NewWorld.jpg);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 924px;
+        grid-column: 1/1;
+    }
+    .grid-main-2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap:10px;
+    }
+    .grid-main-3{
+        background-image: url(images/darkestdungeon2.jpg);
+        background-size:cover;    
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column: 1/1;
+        grid-row: 3/4;
+    }
+    .grid-main-4{
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap:10px;
+    }
+    .grid-main-5{
+        background-image: url(images/diabloIV.jpg);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grid-main-6{
+        background-image: url(images/OctapathTraveler.jpg);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grid-main-7{
+        background-image: url(images/pathfinder.jpg);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grid-footer{
+        grid-column: 1/1;
+    }
+
+    .flex-container{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    
+    /*MENU-DROPDOWN-NAV*/
+    .dropdown-menu-list{
+        display:none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        left:0;
+    }
+    .dropdown-hover-menu:hover .dropdown-menu-list{
+        display: block;
+    } 
+    
+    /*MENU-DROPDOWN-SEARCH*/
+    .drop-box-container{
+        display:none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        right:0;
+    }
+    .dropdown-hover-search:hover .drop-box-container{
+        display: block;
+    }
+    
+    /*FOOTER*/  
+    .footer-apearance{
+        height:150px;
+    }
+    /*TEXTO-CONTAINER*/
+    .text-principal, .text-secondary{
+        margin:380px 0px 0px 5px;
+        color: white;
+        text-shadow: 5px 5px 5px black;
+    }
+    .text-others-1, .text-others-2, .text-others-3{
+        margin:170px 0px 0px 5px;
+        color: white;
+    }
+    .text-lateral-up-1,.text-lateral-up-2,.text-lateral-up-3,.text-lateral-up-4{
+        margin:370px 0px 0px 5px;
+        color: white;
+    }
+    /*TÍTULO SITE*/
+    .site-title{
+        font-size:25px;
+        color:rgba(77, 26, 26, 0.7);
+        font-weight: bolder;
+        text-shadow: 5px 5px 5px rgba(77, 26, 26, 0.7);
+    }
+    /*TAMANHO ÍCONE*/
+    .icon-contact>a>img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-footer{  
+        width: 111px;
+        height: 75px;
+    }
+}
