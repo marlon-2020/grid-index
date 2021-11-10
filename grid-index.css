@@ -3,6 +3,11 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+@font-face {
+    font-family: karmatic;
+    src: url(ka1.ttf);
 }
 .all-container{
     background-image: url(images/back.jpg);
@@ -22,7 +27,7 @@
 
 /*NAVEGADOR*/
 .grid-nav{
-    background-color: white;
+    background-color: rgba(165, 82, 4, 0.8);
     grid-column: 1/4;
 }
 .grid-nav-recursive{
@@ -30,7 +35,7 @@
 }
 /*FIGURAS DOS ELEMENTOS DO GRID*/
 .grid-main-1{
-    background-image: url(/grid-index/images/NewWorld.jpg);
+    background-image: url(images/NewWorld.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,7 +113,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left:5px;
 }
 .menu-list{
     display: flex;
@@ -133,8 +137,10 @@
     transform: scale(1.2);
 }
 .menu-logo{
-    width: 80px;
-    height:100%;
+    font-family: karmatic;
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
 }
 .menu-search{
     display:flex;
@@ -192,8 +198,4 @@
     background-color: white;
     text-shadow: 1px 1px 1px silver;
     color:black;
-}
-.logo-footer{
-    width: 74px;
-    height: 50px;
 }

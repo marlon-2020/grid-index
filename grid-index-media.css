@@ -18,7 +18,7 @@
     
     /*FIGURAS DOS ELEMENTOS DO GRID*/
     .grid-main-1{
-        background-image: url(/grid-index/images/NewWorld.jpg);
+        background-image: url(images/NewWorld.jpg);
         background-size:cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -70,6 +70,7 @@
         display:flex;
         align-items:center;
         justify-content: space-between;
+        background-color: rgba(165, 82, 4, 0.8);
     }
     
     /*MENU-DROPDOWN-NAV*/
